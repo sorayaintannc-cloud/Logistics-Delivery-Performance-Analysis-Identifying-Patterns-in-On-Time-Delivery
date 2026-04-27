@@ -1,0 +1,26 @@
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+Jawab: NoSQL adalah jenis database yang tidak menggunakan tabel seperti database biasa (SQL).
+Data disimpan dengan format yang lebih fleksibel, misalnya seperti JSON, sehingga lebih mudah menampung data yang tidak terstruktur atau berubah-ubah.
+Biasanya digunakan saat data sangat besar, cepat berubah, atau butuh proses yang lebih cepat dan scalable.
+salah satu tools/database NoSQL adalah MongoDB yang menyimpan data dalam bentuk dokumen mirip dengan JSON, bukan tabel seperti SQL.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+Jawab: NoSQL digunakan saat data tidak terstruktur atau sering berubah, dan ketika butuh sistem yang cepat serta scalable.
+RDBMS digunakan saat data sudah jelas strukturnya, butuh hubungan antar tabel, dan membutuhkan konsistensi tinggi, seperti data transaksi.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+Jawab: 1. MongoDB, menyimpan data dalam bentuk dokumen (mirip JSON), sehingga fleksibel dan mudah digunakan saat struktur data sering berubah.
+2. Redis, Menyimpan data di memori (RAM), sehingga sangat cepat. Cocok digunakan untuk caching atau data yang butuh akses super cepat.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+Jawab: Airflow adalah tools untuk mengatur dan menjalankan task secara otomatis.
+Kita bisa menyusun langkah-langkah seperti ambil data, bersihkan, lalu simpan, dan Airflow akan menjalankannya secara terjadwal dan berurutan.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+Jawab: Great Expectations adalah library Python yang digunakan untuk melakukan data validation dengan mendefinisikan serangkaian expectation terhadap dataset. Expectation berfungsi sebagai kriteria kualitas data, seperti memastikan nilai tidak null, unik, atau sesuai tipe data yang diharapkan. 
+Setelah expectation didefinisikan, Great Expectations akan melakukan pengecekan terhadap data dan menghasilkan output berupa status validasi
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+Jawab: Batch Processing adalah metode pemrosesan data yang dilakukan secara berkala dengan mengumpulkan data dalam jumlah besar (bulk), lalu diproses sekaligus dalam satu waktu, bukan secara real-time
+Contoh kasus penggunaan: sistem payroll bulanan
+Tools: Apache Airflow, Hadoop, Spark.
