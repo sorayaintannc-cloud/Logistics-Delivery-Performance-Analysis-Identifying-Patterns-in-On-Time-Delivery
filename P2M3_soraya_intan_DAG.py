@@ -3,7 +3,7 @@
 Milestone 3
 
 Nama  : Soraya Intan
-Batch : FTDS
+Batch : FTDS-HCK-038
 
 Program ini dibuat untuk melakukan automasi pengambilan data dari PostgreSQL,
 melakukan data cleaning, menyimpan data clean ke CSV, dan mengirim data
