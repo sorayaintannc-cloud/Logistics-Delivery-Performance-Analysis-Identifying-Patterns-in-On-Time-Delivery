@@ -1,0 +1,250 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "clean_data_asset",
+      "data_connector_name": "fluent",
+      "datasource_name": "pandas_datasource"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260427T094220.120568Z",
+      "pandas_data_fingerprint": "43c47055a45ee8521882d5576015808b"
+    },
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "checkpoint_1",
+    "expectation_suite_name": "p2m3_expectation_suite",
+    "great_expectations_version": "0.18.21",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2026-04-27T16:42:20.106991+07:00"
+    },
+    "validation_id": null,
+    "validation_time": "20260427T094220.155314Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "pandas_datasource-clean_data_asset",
+          "column": "id"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 10999,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "pandas_datasource-clean_data_asset",
+          "column": "customer_rating",
+          "max_value": 5,
+          "min_value": 1
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 10999,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "pandas_datasource-clean_data_asset",
+          "column": "reachedontime_yn",
+          "value_set": [
+            0,
+            1
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 10999,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "pandas_datasource-clean_data_asset",
+          "column": "customer_care_calls",
+          "type_list": [
+            "int64"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "int64"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_set",
+        "kwargs": {
+          "batch_id": "pandas_datasource-clean_data_asset",
+          "column_set": [
+            "id",
+            "warehouse_block",
+            "mode_of_shipment",
+            "customer_care_calls",
+            "customer_rating",
+            "cost_of_the_product",
+            "prior_purchases",
+            "product_importance",
+            "gender",
+            "discount_offered",
+            "weight_in_gms",
+            "reachedontime_yn"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          "id",
+          "warehouse_block",
+          "mode_of_shipment",
+          "customer_care_calls",
+          "customer_rating",
+          "cost_of_the_product",
+          "prior_purchases",
+          "product_importance",
+          "gender",
+          "discount_offered",
+          "weight_in_gms",
+          "reachedontime_yn"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_equal",
+        "kwargs": {
+          "batch_id": "pandas_datasource-clean_data_asset",
+          "value": 10999
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 10999
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_value_lengths_to_be_between",
+        "kwargs": {
+          "batch_id": "pandas_datasource-clean_data_asset",
+          "column": "warehouse_block",
+          "max_value": 1,
+          "min_value": 1
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 10999,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 7,
+    "success_percent": 100.0,
+    "successful_expectations": 7,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}
