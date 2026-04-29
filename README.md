@@ -9,7 +9,8 @@
 5. soraya_intan_ddl.txt - Berisi syntax DDL dan DML untuk pembuatan tabel dan insert data ke PostgreSQL.
 6. soraya_intan_GX.ipynb - Notebook untuk validasi data menggunakan Great Expectations.
 7. soraya_intan_DAG_graph.png - Visualisasi graph DAG yang menunjukkan alur pipeline Airflow.
-8. Folder images - Berisi screenshot visualisasi dashboard Kibana beserta insight yang dihasilkan.
+8. Docker-compose.yml - Konfigurasi Docker untuk menjalankan seluruh services (PostgreSQL, Airflow, Elasticsearch, dan Kibana)
+9. Folder images - Berisi screenshot visualisasi dashboard Kibana beserta insight yang dihasilkan.
 ```
 
 ## Problem Background
