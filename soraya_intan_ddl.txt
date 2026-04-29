@@ -1,0 +1,42 @@
+URL Dataset:
+https://www.kaggle.com/datasets/prachi13/customer-analytics
+
+DDL:
+CREATE TABLE table_m3 (
+    "ID" INTEGER,
+    "Warehouse_block" VARCHAR(10),
+    "Mode_of_Shipment" VARCHAR(50),
+    "Customer_care_calls" INTEGER,
+    "Customer_rating" INTEGER,
+    "Cost_of_the_Product" INTEGER,
+    "Prior_purchases" INTEGER,
+    "Product_importance" VARCHAR(50),
+    "Gender" VARCHAR(10),
+    "Discount_offered" INTEGER,
+    "Weight_in_gms" INTEGER,
+    "Reached.on.Time_Y.N" INTEGER
+);
+
+DML / Insert Data:
+import psycopg2
+
+conn = psycopg2.connect(
+    host="localhost",
+    port="5434",
+    database="db_m3",
+    user="airflow",
+    password="airflow"
+)
+
+cur = conn.cursor()
+
+with open("P2M3_soraya_intan_data_raw.csv", "r") as f:
+    cur.copy_expert("""
+        COPY table_m3
+        FROM STDIN
+        WITH CSV HEADER
+    """, f)
+
+conn.commit()
+cur.close()
+conn.close()
